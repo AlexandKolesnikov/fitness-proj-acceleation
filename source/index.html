@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Учебный проект. Акселерация в HTML-Academy. Этап 1-й.">
-    <title>fitness-proj-acceleation </title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header-wrapper container">
-          <a class="header__logo">
-            <svg width="120" height="26">
-              <use href="img/svg/logo.svg"></use>
-            </svg>
-          </a>
-          <a class="header__phone" href="tel:+78005555555">
-            8-800-555-55-55
-          </a>
-        </div>
-      </header>
-      <main>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Учебный проект. Акселерация в HTML-Academy. Этап 1-й.">
+  <title>fitness-proj-acceleation </title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-wrapper container">
+        <a class="header__logo">
+          <svg width="120" height="26">
+            <use href="img/svg/logo.svg"></use>
+          </svg>
+        </a>
+        <a class="header__phone" href="tel:+78005555555">
+          8-800-555-55-55
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
         <div class="container">
+          <div class="hero-wrapper">
+            <ul class="hero-list">
+              <li class="hero-list__item">
+                <p class="hero-list__item-text">Тренажёрный зал</p>
+              </li>
+              <li class="hero-list__item">
+                <p class="hero-list__item-text">Групповые занятия</p>
+              </li>
+              <li class="hero-list__item">
+                <p class="hero-list__item-text">Кардио-зона</p>
+              </li>
+            </ul>
+            <h2 class="hero-pretitle">ОМСК</h2>
+            <h1 class="hero-title">ФИТНЕС ЦЕНТР</h1>
+            <a class="intro__button button" href="#subscription">
+              Купить абонемент
+            </a>
+          </div>
+          <picture>
+            <source type="image/webp" srcset="img/man.webp 1x, img/man@2x.webp 2x" width="500" height="524">
+            <img src="img/man.jpg" srcset="img/man@2x.jpg" width="500" height="524" alt="Мужчина в футболке с логотипом Супермена">
+          </picture>
 
         </div>
-      </main>
-      <footer>
-        <div class="container">
+      </section>
 
-        </div>
-      </footer>
-    </div>
+    </main>
+    <footer>
+      <div class="container">
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Обычная модалка</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
