@@ -1,0 +1,12 @@
+.hero {
+  background: $main-gradient;
+  min-height: 658px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}

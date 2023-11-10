@@ -1299,9 +1299,41 @@ button,
           user-select: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 .header__phone:focus, .header__phone:focus-within {
   outline: none;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  min-height: 658px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* @mixin hover-focus {

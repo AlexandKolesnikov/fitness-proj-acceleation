@@ -30,6 +30,7 @@
   color: $color-default-white;
   user-select: none;
   transition: $trans-default;
+  background: $main-gradient;
 
   &:focus,
   &:focus-within {
