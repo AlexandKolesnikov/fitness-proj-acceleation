@@ -1,12 +1,12 @@
 .header {
-  position: absolute;
+  // position: absolute;
   width: 100%;
+  background: $main-gradient;
 }
 
-.header_wrapper {
+.header-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 30px;
 }
@@ -30,7 +30,7 @@
   color: $color-default-white;
   user-select: none;
   transition: $trans-default;
-  background: $main-gradient;
+
 
   &:focus,
   &:focus-within {

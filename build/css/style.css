@@ -572,7 +572,6 @@ button,
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 @media (max-width: 1359px) {
   .container {
@@ -1256,21 +1255,18 @@ button,
 }
 
 .header {
-  position: absolute;
   width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 
-.header_wrapper {
+.header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 30px;
@@ -1299,8 +1295,6 @@ button,
           user-select: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  background: -webkit-gradient(linear, left top, right top, from(#1C3477), color-stop(0.01%, #1C3477), color-stop(39.11%, #1A3578), color-stop(75.5%, #73184B), to(#B4022A));
-  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 }
 .header__phone:focus, .header__phone:focus-within {
   outline: none;
