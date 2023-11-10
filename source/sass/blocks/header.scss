@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.header__logo {
+  margin-left: auto;
+}
+
+.header__logo svg {
+  fill: $color-default-white;
+}
+
+.header__phone {
+  position: relative;
+  margin-left: 10px;
+  font-family: $ff-alumni;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+  user-select: none;
+  transition: $trans-default;
+
+  &:focus,
+  &:focus-within {
+    outline: none;
+  }
+
+}

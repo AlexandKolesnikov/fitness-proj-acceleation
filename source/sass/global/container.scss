@@ -1,14 +1,14 @@
 .container {
   width: 100%;
-  max-width: 1160px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 40px;
 
-  @include tablet-max-width {
+  @include vp-1365 {
     padding: 0 45px;
   }
 
-  @include mobile-max-width {
+  @include vp-767 {
     padding: 0 15px;
   }
 }
